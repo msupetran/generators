@@ -20,6 +20,16 @@ module.exports = generators.Base.extend({
         appStaticFiles: function () {
             this.copy('_favicon.ico', 'src/favicon.ico');
             this.directory('styles', 'src/styles');
+        },
+        html: function() {
+            this.fs.copyTpl(
+                this.templatePath('_index.html'),
+                this.destinationPath('src/index.html'),
+                {
+                    appname: 'New Web App',
+                    ngapp: 'newapp'
+                }
+            );
         }
     },
     conflicts: function () {
