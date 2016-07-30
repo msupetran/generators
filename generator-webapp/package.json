@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marlon Supetran",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tsd": "^0.6.5",
+    "yeoman-generator": "^0.24.1"
+  }
 }
