@@ -6,6 +6,7 @@ var _ = require('lodash');
 module.exports = generators.Base.extend({
     constructor: function () {
         generators.Base.apply(this, arguments);
+        this.log('Hello World!');
     },
     initializing: function () {
     },

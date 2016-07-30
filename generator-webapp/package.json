@@ -9,6 +9,7 @@
   "author": "Marlon Supetran",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.14.1",
     "tsd": "^0.6.5",
     "yeoman-generator": "^0.24.1"
   }
