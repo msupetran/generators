@@ -18,13 +18,8 @@ module.exports = generators.Base.extend({
     },
     writing: {
         appStaticFiles: function () {
-            this.log('Template path: ', this.templatePath());
-            this.log('Destination path: ', this.destinationPath());
-            var source = this.templatePath('_favicon.ico');
-            var destination = this.destinationPath('src/favicon.ico');
-            this.log('Source: ', source);
-            this.log('Destination: ', destination);
             this.copy('_favicon.ico', 'src/favicon.ico');
+            this.directory('styles', 'src/styles');
         }
     },
     conflicts: function () {
